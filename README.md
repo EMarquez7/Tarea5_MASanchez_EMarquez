@@ -1,25 +1,25 @@
 # ***Simulation of Financial Processes***
-## ***Homework 5:*** <br>
+## **Inverse Transform*** <br>
 
 ## **Description:**
-This repository contains the fifth homework of the course Simulation of Financial Processes - *Fall 2021* in [ITESO](https://www.topuniversities.com/universities/iteso-universidad-jesuita-de-guadalajara) university. 
-<br>
+This repository contains the 5° assignment of the Simulation Processes course in [ITESO](https://www.topuniversities.com/universities/iteso-universidad-jesuita-de-guadalajara) B.Eng 
+<br>*Graduation date:* *2017-2022 (9th semesters B.Eng).*
 
-It contains the following 2 exercises:
-1. The Probability Density Function is obtained analytically with the derivative of x obtained by solving a given $X$~$U[0,1]$ distribution.<br>
-Using the Inverse Transform method random variables are generated for $F(X)$ [cdf](https://en.wikipedia.org/wiki/Cumulative_distribution_function) and compared against $f(x)$ [pdf](https://en.wikipedia.org/wiki/Probability_density_function).
+### **Objective:**
+The objective of this assignment is to simulate random variables using the $I_{Transform}$ method through the following exercises:
+1. Solve for x the derivative of the $X$~$U[0,1]$ distribution to obtain pdf in LateX.<br>
+Using the $I_{Transform}$ method generate random variables for $F(X)$ [cdf](https://en.wikipedia.org/wiki/Cumulative_distribution_function).&nbsp;<br>
+ Compare it with $f(x)$ [pdf](https://en.wikipedia.org/wiki/Probability_density_function).
 
-2. Inverse Transform method of $X$~$B(10,0.7)$ distribution is now compared against `numpy.random.binomial` method to verify its efficiency.
+2. Compare the $I_{Transform}$ method of $X$~$B(10,0.7)$ against `numpy.random.binomial` method to verify its efficiency.
 
-### **Example:**
+##### **Diagram:**
 <img src="diagram.svg" width="280" height="280">
 
 [![Azure-Badge](https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoft-azure&logoColor=white)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FInverse-Transform)
 
-### **Objective:**
-The objective of this repository is to verify the use of the Inverse Transform method to generate random variables from a given distribution.
-
-*The instructions, source code for indiv. solutions and their output is contained in the main notebook:* [Inverse-Transform.ipynb](https://github.com/EstebanMqz/Inverse-Transform/blob/main/Inverse-Transform.ipynb)
+### **Results:**
+The instructions, source code for indiv. solutions and their output is contained in the main notebook: [Inverse-Transform.ipynb](https://github.com/EstebanMqz/Inverse-Transform/blob/main/Inverse-Transform.ipynb)
 
 ### **Contributors:** 
 ![GitHub Logo](https://github.com/EstebanMqz.png?size=30) &nbsp; [EstebanMqz](https://github.com/EstebanMqz) &nbsp; [MarcoSC08](https://github.com/MarcoSC08)
@@ -45,7 +45,7 @@ If you have any questions or comments, please feel free to send me a message her
 <br><br>
 
 ### **References:**
-[CDF](https://en.wikipedia.org/wiki/Cumulative_distribution_function)<br>
-[PDF](https://en.wikipedia.org/wiki/Probability_density_function)<br>
-[numpy.random.binomial](https://numpy.org/doc/stable/reference/random/generated/numpy.random.binomial.html)
+[Cumulative Density function](https://en.wikipedia.org/wiki/Cumulative_distribution_function)<br>
+[Prob. Density function](https://en.wikipedia.org/wiki/Probability_density_function)<br>
+[numpy.random.binomial](https://numpy.org/doc/stable/reference/random/generated/numpy.random.binomial.html) 
 

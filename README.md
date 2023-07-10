@@ -39,49 +39,60 @@
 
 </Details>
 
-<br>
+---
 
-<b>Description:</b>
+<Details> <Summary> <b> Description: </b> </Summary>
+  
+<br>
 
 [Github-app parse](https://github.com/EstebanMqz/Inverse-Transform/blob/main/images/Description.jpg)
 
-In this repository the [**Inverse-transform**](README.md#references) sampling method is illustrated with:
+In this repository the [**Inverse-transform**](README.md#references) method is illustrated with $n=10000$ samplings for the following:
 
-1. $X~\sim U(a, b)$ for [***uniformly distributed***](README.md#references) <u>continuous</u> random variables:
+<b>1.</b> [*`CDF`*](README.md#References) $\rightarrow$ $F(x)$  = $\frac{2}{\pi}\sin^{-1}(\sqrt x)$
 
-[*`PDF`*](https://en.wikipedia.org/wiki/Probability_density_function) $\rightarrow$ $f(x)$  = $\frac{1}{b-a}$
+$$U = F^{-1}(X) = \sin^{2}(\frac{\pi}{2}X)$$
 
-$$F(x) = \int_{-\infty}^{x} f(x) dx = \int_{a}^{x} \frac{1}{b-a} dx = {\frac{x}{b-a}} \Big|_{a}^{x} = \frac{x-a}{b-a}$$ 
+where $X~\sim U(a, b)$ is [***uniformly distributed***](README.md#references) by definition. 
 
-<br><br>
+<b>2.</b> [***Binomial distribution***](README.md#references) (<i>discrete</i>) with a [*`PMF`*](README.md#References) $X \sim B(X=k; n, p)$.
 
-$\therefore$ The Inverse Transform [*`CDF`*](https://en.wikipedia.org/wiki/Cumulative_distribution_function) $\rightarrow F(X)$ [*pseudo-random number samplings*](README.md#references) $X_i \in [a, b]$ is: 
+$$Pr(X=k;n,p) = \binom{n}{k} p^k (1-p)^{n-k}$$
 
-$$U = F^{-1}(X) = x(b-a) + a$$ 
-<br>
+where the binomial coefficient combinatorial of $k$ sucesses possible in $n$ trials $_n C_k$ can be expressed as:
+$$_n C_k = \frac{n!}{k!(n-k)!}$$
 
-2. $X~\sim B(k; n, p)$ <u>discrete</u> [***Binomial distribution***](README.md#references):<br>
+And generalized to the $k + 1$ $\times$ $\frac{p}{1-p}$ ratio:
 
-If the probability $p$ of $k$ successes in $n$ trials is given by $X = 10000$ samplings.
+$$Pr(k+1;n,p) = \frac{n!}{(k+1)(k)!(n-k-1)!} p^{k+1} (1-p)^{n-k-1}$$
 
-$$Pr(k;n,p) = Pr(X=k;n,p) = \binom{n}{k} p^k (1-p)^{n-k}$$
+$$Pr(k+1;n,p) = \frac{n-k}{(k+1)(1-p)} p^{k+1} (1-p)^{n-k-1}$$
 
-where 
+$$Pr(k+1;n,p) = \frac{n-k}{(k+1)(1-p)} p (p^k (1-p)^{n-k})$$
 
-$$\binom{n}{k} = \frac{n!}{k!(n-k)!}$$
-
-Expressed with factorial operations as:
-
-$$Pr(k;n,p) = \frac{n!}{k!(n-k)!} p^k (1-p)^{n-k}$$
-
-$\therefore$ $k + 1$ $\times$ the ratio of trials to successes is: 
+$\therefore$ the $p$ prob. of $k$ sucesses in $n$ trials $\times$ their ratio is:
 
 $$Pr(k+1;n,p) = \frac{(n-k) p}{(k+1)(1-p)} Pr(k;n,p)$$
 
-Analytical results with the further use of [`numpy.random.random`](README.md#references) & [`numpy.random.binomial`](README.md#references) validated with matplot<br>
-*(see repo-visualization → nbviewer)*
+<i>Samplings made with [`numpy.random.random`](README.md#references) & [`numpy.random.binomial`](README.md#references), validated with `matplotlib`.</i><br>
+
+</Details>
+
+<Details> <Summary> <b> Results: </b> </Summary>
 
 <br>
+
+$F(x)$  = $\frac{2}{\pi}\sin^{-1}(\sqrt x)$<br>
+
+<br>
+
+<img src="/images/IT_ArcSin.jpg" width="630" height="440">
+
+$X \sim B(X=k; n, p)$<br>
+
+<img src="/images/IT_X~B.jpg" width="616" height="837">
+
+</Details>
 
 ###### References:
 
@@ -90,8 +101,8 @@ Analytical results with the further use of [`numpy.random.random`](README.md#ref
 + [Binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution)<br>
 + [Uniform distribution](https://en.wikipedia.org/wiki/Continuous_uniform_distribution#Related_distributions)<br>
 + [Inverse Transform samplings](https://en.wikipedia.org/wiki/Inverse_transform_sampling)<br>
-+ [<i>Pseudo-random number samplings</i>](https://en.wikipedia.org/wiki/Non-uniform_random_variate_generation#:~:text=Non-uniform%20random%20variate%20generation%20or%20pseudo-random%20number%20sampling,a%20uniformly%20distributed%20PRN%20generator.)<br>
 + [<b>(PDF)</b> <i> Probability density function </i>](https://en.wikipedia.org/wiki/Probability_density_function)<br>
++ [<b>(PMF)</b> <i> Probability mass function </i>](https://en.wikipedia.org/wiki/Probability_mass_function)<br>
 + [<b>(CDF)</b> <i> Cumulative density function </i>](https://en.wikipedia.org/wiki/Cumulative_distribution_function)<br>
 + [`numpy.random.random`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.random.html) [`numpy.random.rand`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.rand.html)  
 + [`numpy.random.binomial`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.binomial.html)<br>

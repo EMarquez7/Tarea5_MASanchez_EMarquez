@@ -28,7 +28,7 @@
 
 </Details>
 
-<a name ="rpeo-visualization"></a>
+<a name ="repo-visualization"></a>
 
 <Details> <Summary> <i> Repository Visualization: </i> </Summary>
   
@@ -86,11 +86,11 @@ $F(x)$  = $\frac{2}{\pi}\sin^{-1}(\sqrt x)$<br>
 
 <br>
 
-<img src="/images/IT_ArcSin.jpg" width="630" height="440">
+<img src="/images/Sin.jpg" width="630" height="440">
 
 $X \sim B(X=k; n, p)$<br>
 
-<img src="/images/IT_X~B.jpg" width="616" height="837">
+<img src="/images/X~B(X=k;n, p).jpg" width="616" height="837">
 
 </Details>
 

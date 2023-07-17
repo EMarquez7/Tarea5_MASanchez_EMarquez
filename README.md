@@ -14,20 +14,6 @@
 
 </Details>
 
-
-<Details>
-<Summary> <i>Contact:</i> </Summary>
-
-[![Website](https://img.shields.io/badge/Website-ffffff?style=square&logo=opera&logoColor=red)](https://estebanmqz.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-041a80?style=square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-m65381722210212839/) [![Portfolio](https://img.shields.io/badge/Github-Portfolio-010b38?style=square&logo=github&logoColor=black)](https://estebanmqz.github.io/Portfolio/) [![E-mail](https://img.shields.io/badge/Business-Mail-052ce6?style=square&logo=mail&logoColor=white)](mailto:esteban@esteban.com)  
-
-![GitHub Logo](https://github.com/EstebanMqz.png?size=25) [![Github](https://img.shields.io/badge/Github-000000?style=square&logo=github&logoColor=white)](https://github.com/EstebanMqz)
-<br><br>
-
-
-[MarcoSC08](https://github.com/MarcoSC08)
-
-</Details>
-
 <a name ="repo-visualization"></a>
 
 <Details> <Summary> <i> Repository Visualization: </i> </Summary>
@@ -38,6 +24,20 @@
 <img src="diagram.svg" width="280" height="280">
 
 </Details>
+
+
+<div align="right">
+<Details>
+<Summary> <i>Contact:</i> </Summary>
+  
+[![Website](https://img.shields.io/badge/Website-ffffff?style=square&logo=opera&logoColor=red)](https://estebanmqz.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-041a80?style=square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-m65381722210212839/) [![Portfolio](https://img.shields.io/badge/Github-Portfolio-010b38?style=square&logo=github&logoColor=black)](https://estebanmqz.github.io/Portfolio/) [![E-mail](https://img.shields.io/badge/Business-Mail-052ce6?style=square&logo=mail&logoColor=white)](mailto:esteban@esteban.com)
+
+![GitHub Logo](https://github.com/EstebanMqz.png?size=50) [![Github](https://img.shields.io/badge/Github-000000?style=square&logo=github&logoColor=white)](https://github.com/EstebanMqz)
+
+
+[MarcoSC08](https://github.com/MarcoSC08)
+
+</Details></div>
 
 ---
 
@@ -82,15 +82,18 @@ $$Pr(k+1;n,p) = \frac{(n-k) p}{(k+1)(1-p)} Pr(k;n,p)$$
 
 <br>
 
+As it can be seen in from $F(x)$ samplings, some density functions [`pdf`](README.md#references) have a probability $f(x)$ which is more likely to be modelled with its cumulative function [`cdf`](README.md#references). The inverse transform can be used for the generation of random variables in $x_i\in[0,1]$. 
+
 $F(x)$  = $\frac{2}{\pi}\sin^{-1}(\sqrt x)$<br>
+
+
+![Sin-Wave](https://github.com/EstebanMqz/Inverse-Transform/blob/main/images/Sin.jpg)
 
 <br>
 
-<img src="/images/Sin.jpg" width="630" height="440">
-
 $X \sim B(X=k; n, p)$<br>
 
-<img src="/images/X~B(X=k;n, p).jpg" width="616" height="837">
+![Binomial](https://github.com/EstebanMqz/Inverse-Transform/blob/main/images/X~B(X%3Dk%3Bn%2C%20p).jpg)
 
 </Details>
 
